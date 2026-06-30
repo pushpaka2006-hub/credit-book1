@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Book</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login Page -->
+
+<div class="login-container" id="loginPage">
+
+    <h1>Credit Book</h1>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Username">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password">
+
+    <button onclick="login()">
+        Login
+    </button>
+
+</div>
+
+
+<!-- Dashboard -->
+
+<div id="dashboard" class="dashboard">
+
+<h1>Customer Credit Book</h1>
+
+<div class="top">
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name">
+
+<input
+type="text"
+id="phone"
+placeholder="Phone Number">
+
+<input
+type="number"
+id="credit"
+placeholder="Credit Amount">
+
+<button onclick="addCustomer()">
+Add Customer
+</button>
+
+</div>
+
+<br>
+
+<input
+type="text"
+id="search"
+placeholder="Search Customer"
+onkeyup="searchCustomer()">
+
+<br><br>
+
+<h2>
+Total Credit :
+₹ <span id="total">0</span>
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Phone</th>
+<th>Balance</th>
+<th>Add Credit</th>
+<th>Receive Money</th>
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

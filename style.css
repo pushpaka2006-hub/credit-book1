@@ -1,0 +1,246 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:20px;
+}
+
+/* Login */
+
+.login-container{
+
+    width:350px;
+    margin:80px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.login-container h1{
+
+    text-align:center;
+    margin-bottom:20px;
+    color:#2c3e50;
+
+}
+
+.login-container input{
+
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+
+}
+
+.login-container button{
+
+    width:100%;
+    padding:12px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+.login-container button:hover{
+
+    background:#2980b9;
+
+}
+
+/* Dashboard */
+
+.dashboard{
+
+    display:none;
+
+}
+
+.dashboard h1{
+
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:20px;
+
+}
+
+/* Customer Form */
+
+.top{
+
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.top input{
+
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    width:220px;
+
+}
+
+.top button{
+
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.top button:hover{
+
+    background:#219150;
+
+}
+
+/* Search */
+
+#search{
+
+    width:300px;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+
+}
+
+/* Total */
+
+h2{
+
+    margin:15px 0;
+    color:#d35400;
+
+}
+
+/* Table */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+
+}
+
+table th{
+
+    background:#34495e;
+    color:white;
+    padding:12px;
+
+}
+
+table td{
+
+    text-align:center;
+    padding:10px;
+    border:1px solid #ddd;
+
+}
+
+/* Buttons */
+
+.add{
+
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.add:hover{
+
+    background:#1e8449;
+
+}
+
+.pay{
+
+    background:#e67e22;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.pay:hover{
+
+    background:#ca6f1e;
+
+}
+
+.delete{
+
+    background:#e74c3c;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.delete:hover{
+
+    background:#c0392b;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.top{
+
+    flex-direction:column;
+
+}
+
+.top input{
+
+    width:100%;
+
+}
+
+#search{
+
+    width:100%;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+}
